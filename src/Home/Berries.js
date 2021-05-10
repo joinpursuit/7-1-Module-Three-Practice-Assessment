@@ -9,7 +9,7 @@ export class Berries extends Component {
         super()
         this.state={
             berries: [],
-            berry : ""
+            berryURL : ""
         }
     }
 
@@ -19,27 +19,26 @@ export class Berries extends Component {
 
     loadBerries= async() =>{
         const twentyBerries  = await axios.get("https://pokeapi.co/api/v2/berry/")
-        console.log(twentyBerries)
         
-       const berries =  twentyBerries.data.results.map(berry =>{ return <option name={berry.name} value={berry.url}>{berry.name}</option>})
+       const berries =  twentyBerries.data.results.map(berry =>{
+            const key = uuidv4()
+            return <option name={berry.name} value={berry.url} key={key}>{berry.name}</option>
+        })
         this.setState({berries})
     }
 
     displayBerry = async(e) =>{
         e.preventDefault()
-       if(e.target.value!== ""){
-           const berry = await axios.get(e.target.value).data
-           this.setState({berry})
-       }else{
-           this.setState({berry : ""})
-       }
+        this.setState({
+             berryURL : e.target.value
+        })
     }
 
 
 
     render() {
-        const {berry} = this.state
-        console.log(berry)
+        const {berryURL} = this.state
+        const key = uuidv4()
         return (
             <>
                 <header><h1>Select a Type</h1></header>
@@ -48,7 +47,7 @@ export class Berries extends Component {
                     <option defaultValue="" name="" value=""></option>
                     {this.state.berries}
                 </select>
-                { (berry !== "") ? <Berry firmness={berry.firmness} flavorList={berry.flavors} berryName={berry.name} key={()=>{uuidv4()}}/> : {} }
+                {(berryURL!== "") ? <Berry url={berryURL} key={key}/> : "" }
                 </div>
 
             </>
