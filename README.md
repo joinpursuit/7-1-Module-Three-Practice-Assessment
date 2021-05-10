@@ -113,3 +113,8 @@ Define unique colors (of your choosing) for each page's background.
 Remember to install your packages correctly so that we will be able to run / compile your app by running npm install, npm start.
 
 Your app should also have a **clean** console. We don't want to see you Warnings, Errors, or Logs.
+
+# Goals for 5/10
+
+- Main goal: By 4:30PM, I want to have `Home`, `Locations` and `Berries` specs passing all tests
+- Strech goal: passing all tests by 4:30PM
