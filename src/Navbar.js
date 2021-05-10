@@ -4,7 +4,6 @@ import './styles/Navbar.css'
 export default function Navbar() {
   return (
     <nav>
-
       <ul>
         <img src="" alt="logo" />
         <li>Pokemon</li>
