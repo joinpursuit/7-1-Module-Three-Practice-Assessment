@@ -113,3 +113,7 @@ Define unique colors (of your choosing) for each page's background.
 Remember to install your packages correctly so that we will be able to run / compile your app by running npm install, npm start.
 
 Your app should also have a **clean** console. We don't want to see you Warnings, Errors, or Logs.
+
+# Goals for 5/10
+
+- Main: By 4:30, I want to have "berries" specs passing all of the tests. "home" is mainly a display thing, so I would like to get that done and passing all tests as well.
