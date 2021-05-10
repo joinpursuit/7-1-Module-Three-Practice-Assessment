@@ -113,3 +113,10 @@ Define unique colors (of your choosing) for each page's background.
 Remember to install your packages correctly so that we will be able to run / compile your app by running npm install, npm start.
 
 Your app should also have a **clean** console. We don't want to see you Warnings, Errors, or Logs.
+
+
+#Goals for 5/10
+-Goal by 2: Have all my components set up, App.js and Nav Bar completed.
+-Main goal: By 4:30 I want to have my home page working, my nav bar with clickable link, and all my components formatted in render
+-stretch: pass all cypress tests 
+
