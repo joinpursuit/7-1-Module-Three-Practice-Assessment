@@ -28,11 +28,8 @@ export class Berries extends Component {
     displayBerry = async(e) =>{
         e.preventDefault()
        if(e.target.value!== ""){
-           const berry = await axios.get(e.target.value)
-           const key = await uuidv4()
-               this.setState({
-            berry: <Berry firmness={berry.data.firmness} flavorList={berry.data.flavors} berryName={berry.data.name} key={key}/>
-            })
+           const berry = await axios.get(e.target.value).data
+           this.setState({berry})
        }else{
            this.setState({berry : ""})
        }
@@ -41,6 +38,8 @@ export class Berries extends Component {
 
 
     render() {
+        const {berry} = this.state
+        console.log(berry)
         return (
             <>
                 <header><h1>Select a Type</h1></header>
@@ -49,7 +48,7 @@ export class Berries extends Component {
                     <option defaultValue="" name="" value=""></option>
                     {this.state.berries}
                 </select>
-                {this.state.berry}
+                { (berry !== "") ? <Berry firmness={berry.firmness} flavorList={berry.flavors} berryName={berry.name} key={()=>{uuidv4()}}/> : {} }
                 </div>
 
             </>
