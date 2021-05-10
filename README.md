@@ -113,3 +113,10 @@ Define unique colors (of your choosing) for each page's background.
 Remember to install your packages correctly so that we will be able to run / compile your app by running npm install, npm start.
 
 Your app should also have a **clean** console. We don't want to see you Warnings, Errors, or Logs.
+
+
+# Goals for 5/10
+At 11:45 I need to see the 3 different links.
+I need to have all my compentent configured even without information to render.
+I need to have at least my Api working.
+At 4:30 have at least have of the lab pokemon link.
