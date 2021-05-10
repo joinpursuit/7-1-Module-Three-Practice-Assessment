@@ -1,10 +1,18 @@
+import { Route, Switch } from "react-router-dom";
+import NavBar from "./Components/NavBar";
+import Home from "./Components/Home";
+import Pokemon from "./Components/Pokemon";
 import "./App.css";
 
 function App() {
   return (
     <div className="app">
       <main>
-        <h1>Hello, world!</h1>
+        <NavBar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/pokemon" component={Pokemon} />
+        </Switch>
       </main>
     </div>
   );
