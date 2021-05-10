@@ -7,7 +7,7 @@ export class Home extends Component {
         return (
             <div>
                 <Navbar />
-                <Route exact path="/" render= {() => <h1>Welcome to my pokemon app!</h1>} />
+                <Route exact path="/" render= {() => <h1>Welcome to My Pokemon App!</h1>} />
             </div>
         )
     }
