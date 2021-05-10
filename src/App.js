@@ -1,10 +1,11 @@
 import "./App.css";
+import ModuleThreePracticeAssessment from "./components/ModuleThreePracticeAssessment"
 
 function App() {
   return (
     <div className="app">
       <main>
-        <h1>Hello, world!</h1>
+        <ModuleThreePracticeAssessment />
       </main>
     </div>
   );

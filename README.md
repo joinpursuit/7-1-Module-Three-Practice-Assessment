@@ -113,3 +113,22 @@ Define unique colors (of your choosing) for each page's background.
 Remember to install your packages correctly so that we will be able to run / compile your app by running npm install, npm start.
 
 Your app should also have a **clean** console. We don't want to see you Warnings, Errors, or Logs.
+
+# Goals for 5/10
+
+- Main goal: By 4:30PM, I want to have `Home`, `Locations` and `Berries` specs passing all tests
+- Strech goal: passing all tests by 4:30PM
+
+# Reflection
+
+## What did I accomplish today?
+
+- I passed all the tests by 4:30PM.
+
+## Did I meet the goals I set for myself this morning? If yes, what led to my success? If not, what do I need to work on to accomplish those goals?
+
+- I met the goals I set. Thanks to my sister prepared food for me so I had more time to work on the practice.
+
+## Based on my work today, something I need more practice with is (be as specific as possible!):
+
+Routing syntax is still new to me, I kind of know how it works, but I still need to look back at my routing lab for syntax sometimes.
