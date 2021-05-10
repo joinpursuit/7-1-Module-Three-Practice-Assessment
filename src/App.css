@@ -17,3 +17,39 @@ h1{
   font-size: 120px;
   text-align: center;
 }
+
+.berries{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.berries *{
+  grid-column: 2 /-2;
+  width: auto;
+  font-size: 36px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin:2px;
+  padding: 2px;
+}
+
+.berry-display{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+
+}
+.berry-display ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.berry-display ul li{
+  display: list-item;
+}
+.berry-display ul li::marker {
+color: lightgreen;
+
+}

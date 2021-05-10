@@ -5,6 +5,7 @@ import Home from './Home/index'
 import Berries from './Home/Berries'
 import Pokemon from './Home/Pokemon'
 import Locations from './Home/Locations'
+import { v4 as uuidv4 } from 'uuid'
 
 export class App extends Component {
   render() {
@@ -19,10 +20,18 @@ export class App extends Component {
       </nav>
       <main>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/berries" component={Berries} />
-          <Route path="/pokemon" component={Pokemon} />
-          <Route path="/locations" component ={Locations} />
+          <Route exact path="/">
+            <Home key={uuidv4()} />
+          </Route>
+          <Route  path="/berries">
+              <Berries key={uuidv4()}/>
+          </Route>
+          <Route  path="/pokemon">
+            <Pokemon key={uuidv4()}/>
+          </Route>
+          <Route path="/locations">
+            <Locations key={uuidv4()} />
+          </Route>
           <Route render={()=>{ <h1>404: Page not found!</h1>}} />
         </Switch>
       </main>
