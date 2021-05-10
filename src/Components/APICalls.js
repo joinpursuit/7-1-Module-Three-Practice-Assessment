@@ -18,10 +18,19 @@ const getFirmness = async (url) => {
     }
 }
 
+const locations = async () => {
+    try{
+        const {data} = await axios.get(`https://pokeapi.co/api/v2/location`);
+        return data.results
+    }catch(e){
+        alert(`Error occured in getting firmness: ${e.message}`)
+    }
+}
 
 const APICalls = {
     loadBerries,
-    getFirmness
+    getFirmness,
+    locations
 }
 
 export default APICalls
