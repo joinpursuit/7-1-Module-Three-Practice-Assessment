@@ -120,3 +120,23 @@ Your app should also have a **clean** console. We don't want to see you Warnings
 - Main goal: By 4:30, get all links working, and complete the berries and pokemon routes.
 
 - Stretch goal: By 4:30, pass all tests.
+
+# Reflection
+
+## What did I accomplish today?
+
+I was able to complete my practice assessment as well as do a bit of journaling/reflection.
+
+..
+
+## Did I meet the goals I set for myself this morning? If yes, what led to my success? If not, what do I need to work on to accomplish those goals?
+
+I was able to meet both of the goals that I set for myself this morning. I was fortunate enough to be able to work straight through lunch and because of that was able to complete the assessment.
+
+...
+
+## Based on my work today, something I need more practice with is (be as specific as possible!):
+
+I need more practice with conditional rendering.
+
+...
