@@ -117,3 +117,17 @@ Your app should also have a **clean** console. We don't want to see you Warnings
 # Goals for 5/10
 
 - Main: By 4:30, I want to have "berries" specs passing all of the tests. "home" is mainly a display thing, so I would like to get that done and passing all tests as well.
+
+# Reflection
+
+## What did I accomplish today?
+
+Didn't really focus on the assessment, more so focused on outside activities and getting my calculator to launch
+
+## Did I meet the goals I set for myself this morning? If yes, what led to my success? If not, what do I need to work on to accomplish those goals?
+
+No, I need to make sure that the things I worked on previously work the first time around. Better time management skills.
+
+## Based on my work today, something I need more practice with is (be as specific as possible!):
+
+Will label this once I actually begin work on the assessment
