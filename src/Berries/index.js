@@ -18,9 +18,8 @@ export class Berries extends Component {
     }
 
     loadBerries= async() =>{
-        const twentyBerries  = await axios.get("https://pokeapi.co/api/v2/berry/")
-        
-       const berries =  twentyBerries.data.results.map(berry =>{
+       const twentyBerries  = await axios.get("https://pokeapi.co/api/v2/berry/")
+       const berries  =  twentyBerries.data.results.map(berry =>{
             const key = uuidv4()
             return <option name={berry.name} value={berry.url} key={key}>{berry.name}</option>
         })
