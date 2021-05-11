@@ -113,3 +113,12 @@ Define unique colors (of your choosing) for each page's background.
 Remember to install your packages correctly so that we will be able to run / compile your app by running npm install, npm start.
 
 Your app should also have a **clean** console. We don't want to see you Warnings, Errors, or Logs.
+
+
+
+
+Smart Goals: 
+by 1pm I will get the general boiler plate and layout of my code set up
+by 3pm i will have a static version of most of my components set up to
+by 4pm i will check through my work and see what test it passes and
+by 5pm i will have a fully staic version of the pokemon app up or 50% of it atleast
