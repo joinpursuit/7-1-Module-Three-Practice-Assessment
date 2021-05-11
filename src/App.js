@@ -1,7 +1,8 @@
 import './App.css'
 import React, { Component } from 'react'
-import { Link, Switch, Route }  from "react-router-dom"
+import { Switch, Route }  from "react-router-dom"
 import Home from './Home/index'
+import NavBar from './NavBar'
 import Berries from './Berries/index'
 import Pokemon from './Pokemon/index'
 import Locations from './Locations/index'
@@ -12,12 +13,7 @@ export class App extends Component {
     return (
 
         <div className = "home-style">
-        <nav className="home-nav">
-        <Link to="/"><img src="https://c0.klipartz.com/pngpicture/506/902/gratis-png-pokemon-omega-ruby-%E2%80%8B%E2%80%8By-alfa-zafiro-pokemon-go-poke-ball-pokemon-go.png" alt="Pokeball" /></Link>
-        <Link to="/pokemon">Pokemon</Link>
-        <Link to="/locations">Locations</Link>
-        <Link to="/berries">Berries</Link>
-      </nav>
+          <NavBar />
       <main>
         <Switch>
           <Route exact path="/">
