@@ -40,7 +40,7 @@ export class Berries extends Component {
         const key = uuidv4()
         return (
             <>
-                <header><h1>Select a Type</h1></header>
+                <h1>Select a Type</h1>
                 <div className="berries">
                 <select name="select-a-type" id="type" onChange={this.displayBerry}>
                     <option defaultValue="" name="" value=""></option>

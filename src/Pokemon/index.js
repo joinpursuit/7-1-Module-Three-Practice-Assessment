@@ -40,12 +40,12 @@ export class Pokemon extends Component {
     render() {
         return (
             <>
-                <header><h1>Search for a Pokemon</h1></header>
-                <main>
+                <h1>Search for a Pokemon</h1>
+                <div>
                     <input type="text" onChange={this.handleChange} placeholder="Find Your Pokemon"/>
                     <button type="submit" onClick={this.handleSubmit}>Submit</button>
                     <Poke state={this.state}/>                           
-                </main>
+                </div>
 
             </>
         )

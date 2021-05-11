@@ -50,7 +50,7 @@ export class Locations extends Component {
 
         return (
             <>
-              <header><h1>List of Locations</h1></header> 
+              <h1>List of Locations</h1>
               <button onClick={this.toggle}>{button}</button>
               <ul style={{display}}>{locations}</ul>
             </>
