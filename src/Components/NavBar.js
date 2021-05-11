@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <nav>
+    <nav className="Links">
       <Link to="/">
         <img
-          src="https://pbs.twimg.com/profile_images/1347869339052072963/oA0oMpur.jpg"
+          src="https://www.freeiconspng.com/thumbs/pokeball-png/pokeball-transparent-png-2.png"
           alt="pokeball"
           style={{ width: "50px", height: "50px" }}
         />
       </Link>{" "}
-      <Link to="/pokemon">Pokemon</Link>{" "} 
-      <Link to="/locations">Locations</Link>{" "}
+      <Link to="/pokemon">Pokemon</Link> <Link to="/locations">Locations</Link>{" "}
       <Link to="/berries">Berries</Link>
     </nav>
   );

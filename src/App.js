@@ -9,7 +9,9 @@ function App() {
   return (
     <div className="app">
       <main>
-        <NavBar />
+        <div className="Nav">
+          <NavBar />
+        </div>
         <Switch>
           <Route exact path="/">
             <h1>Welcome to My Pokemon App!</h1>
