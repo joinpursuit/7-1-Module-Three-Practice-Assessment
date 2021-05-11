@@ -1,3 +1,14 @@
 .app {
   text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1 fr;
+  background-color: ivory;
+}
+.navbar {
+  background-color:orangered;
+  color: white;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  padding: 80px;
 }
