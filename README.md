@@ -113,3 +113,24 @@ Define unique colors (of your choosing) for each page's background.
 Remember to install your packages correctly so that we will be able to run / compile your app by running npm install, npm start.
 
 Your app should also have a **clean** console. We don't want to see you Warnings, Errors, or Logs.
+
+
+# Goals for 5/10
+
+- Main goal: By 4:30pm, I want to have the `home` and `berries` specs passing all tests.
+- Stretch: Finish all specs, perfect score before today midnight
+
+
+# Reflection
+
+## What did I accomplish today?
+
+- I accomplished `home`, `berries` and a bit portion of `locations`
+
+## Did I meet the goals I set for myself this morning? If yes, what led to my success? If not, what do I need to work on to accomplish those goals?
+
+- I successfully met the goals I set this morning; practicing led me to this succeess.
+
+## Based on my work today, something I need more practice with is (be as specific as possible!):
+
+Yes, I need more practice in order to gain the good pace to get the whole assessment done.
