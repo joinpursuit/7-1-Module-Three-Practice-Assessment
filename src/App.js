@@ -2,9 +2,9 @@ import './App.css'
 import React, { Component } from 'react'
 import { Link, Switch, Route }  from "react-router-dom"
 import Home from './Home/index'
-import Berries from './Home/Berries'
-import Pokemon from './Home/Pokemon'
-import Locations from './Home/Locations'
+import Berries from './Berries/index'
+import Pokemon from './Pokemon/index'
+import Locations from './Locations/index'
 import { v4 as uuidv4 } from 'uuid'
 
 export class App extends Component {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Berry from '../components/Berry'
+import Berry from './Berry'
 import axios from 'axios'
 import { v4 as uuidv4 } from 'uuid'
 
