@@ -1,23 +1,24 @@
-import { Link, Route } from "react-router-dom";
+import { Route, Switch } from "react-router";
 import "./App.css";
-import Pokemon from "./components/Pokemon"
-import Home from "./components/Home" 
-import Location from "./components/Location"
-import Berries from "./components/Berries"
+import Berries from "./Components/Berries";
+import Locations from "./Components/Locations";
+import NavBar from "./Components/NavBar";
+import Pokemon from "./Components/Pokemon";
 
 function App() {
   return (
     <div className="app">
-      <nav className="navbar">
-        <Link to="/">Home</Link>
-        <Link to="/pokemon">Pokemon</Link>
-        <Link to="/location">Location</Link>
-        <Link to= "/berries">Berries</Link>
-      </nav>
-      <Route exact path ="/" component = {Home}/>
-      <Route path="/pokemon" component={Pokemon}/>
-      <Route path="/locations" component= {Location}/>
-      <Route path="/berries" component={Berries}/>
+      <NavBar />
+      <main>
+        <Switch>
+          <Route exact path="/">
+            <h1>Welcome to My Pokemon App!</h1>
+          </Route>
+          <Route path = "/berries" component={Berries}/>
+          <Route path="/pokemon" component={Pokemon}/>
+          <Route path = "/locations" component={Locations}/>
+        </Switch>
+      </main>
     </div>
   );
 }
