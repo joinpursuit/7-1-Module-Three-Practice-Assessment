@@ -118,3 +118,17 @@ Your app should also have a **clean** console. We don't want to see you Warnings
 
 - Main goal: By 4:30 pm, I want to have all the cypress tests passing.
 - Stretch goal: Get all the styling done to look similar to the lab preview.
+
+# Reflection
+
+## What did I accomplish today?
+
+- I was able to complete a big part of the practice assessment.
+
+## Did I meet the goals I set for myself this morning? If yes, what led to my success? If not, what do I need to work on to accomplish those goals?
+
+- No I wasn't able to complete the assessment by 4:30pm it was harder than I thought it would be but I was able to finish most of it that's a win! Next time I should set smaller goals..
+
+## Based on my work today, something I need more practice with is (be as specific as possible!):
+
+- I need to work on setting more realistic goals. Goals that are smaller and more managable so I don't overwhelem myself and stress over it..

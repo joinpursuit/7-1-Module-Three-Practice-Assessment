@@ -1,19 +1,18 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <nav>
-      <NavLink exact to="/">
+      <Link to="/">
         <img
           src="https://pbs.twimg.com/profile_images/1347869339052072963/oA0oMpur.jpg"
           alt="pokeball"
-          width="30px"
-          height="30px"
+          style={{ width: "50px", height: "50px" }}
         />
-      </NavLink>
-      <NavLink to="/pokemon">Pokemon</NavLink>
-      <NavLink to="/locations">Locations</NavLink>
-      <NavLink to="/berries">Berries</NavLink>
+      </Link>{" "}
+      <Link to="/pokemon">Pokemon</Link>{" "} 
+      <Link to="/locations">Locations</Link>{" "}
+      <Link to="/berries">Berries</Link>
     </nav>
   );
 };
