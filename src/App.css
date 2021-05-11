@@ -1,3 +1,25 @@
+body {
+  background-color: blanchedalmond;
+}
+
 .app {
   text-align: center;
+}
+
+.Nav {
+  background: rgb(238, 181, 74);
+  height: 120px;
+  box-shadow: 1px 1px 6px 1px rgb(61, 59, 59);
+}
+
+.List {
+  list-style-type: circle;
+  margin-right: 70px;
+  line-height: 1.5;
+}
+
+li {
+  list-style-position: inside;
+  font-family: cursive;
+  font-size: 20px;
 }
