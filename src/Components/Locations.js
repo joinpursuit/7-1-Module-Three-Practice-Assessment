@@ -3,7 +3,8 @@ import React from 'react'
 function Locations() {
     return (
         <div>
-            <p>You found me in this location~</p>
+            <h1>List of Locations</h1>
+            <button></button>
         </div>
     )
 }
