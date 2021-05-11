@@ -1,11 +1,11 @@
 import React from 'react'
 import { Route } from 'react-router'
-import LocalDisplay from "./LocalDisplay.js"
+import LocalDisplay from "./LocalDisplay"
 
 export default function index() {
     return (
         <div>
-            <Route exact path="/" component={LocalDisplay} />
+            <Route path="/" component={LocalDisplay} />
         </div>
     )
 }
