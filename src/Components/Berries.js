@@ -47,7 +47,7 @@ export class Berries extends Component {
                     {options}
                 </select>
 
-                <h2>Name: {showFirmness.name}</h2>
+                <h2>{showFirmness.name}</h2>
                 <h2>{showFirmness.firmness ? showFirmness.firmness.name : null}</h2>
             </div>
         )
