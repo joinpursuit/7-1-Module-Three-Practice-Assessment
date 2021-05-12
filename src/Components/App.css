@@ -1,0 +1,31 @@
+.app {
+  text-align: center;
+}
+
+.logo{
+  height: 50px;
+}
+
+.Navbar {
+  height: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  background-color: lightsalmon
+}
+
+.Link {
+  font-size: 25px;
+  text-decoration: none;
+  color: red;
+  
+}
+.Link:hover {
+  font-size: 35px;
+  text-decoration: 1px solid underline;
+}
+
+.Select {
+  width: 100px;
+  height: 35px;
+}

@@ -113,3 +113,39 @@ Define unique colors (of your choosing) for each page's background.
 Remember to install your packages correctly so that we will be able to run / compile your app by running npm install, npm start.
 
 Your app should also have a **clean** console. We don't want to see you Warnings, Errors, or Logs.
+
+
+# Smart Goal for 5/10: 
+
+Main Goal (By 4:30pm today)
+
+- Install dependencies
+- Navigation Bar 
+- Pass home.test.js
+- Pass locations.test.js
+
+Stretch Goal: 
+
+- Pass 3/4 (home,locations,pokemon) of cypress specs by 4:30pm 
+
+
+# Reflection
+
+## What did I accomplish today?
+
+- I rewatched the routing lesson to strengten my understanding for this practice 
+- Set up the navbar and linked my components 
+
+...
+
+## Did I meet the goals I set for myself this morning? If yes, what led to my success? If not, what do I need to work on to accomplish those goals?
+
+- No, I was only able to pass home.test.js. However, I did cook myself a yummy meal for lunch instead of getting take-outs
+
+...
+
+## Based on my work today, something I need more practice with is (be as specific as possible!):
+
+- I am pretty good at time-management and pacing myself, but sometimes I get distracted by trying out different codes and forgets my main goal. I'm thinking of setting alarms next time so that I can maintain my focus. 
+
+...
