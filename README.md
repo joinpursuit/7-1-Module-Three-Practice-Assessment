@@ -113,3 +113,16 @@ Define unique colors (of your choosing) for each page's background.
 Remember to install your packages correctly so that we will be able to run / compile your app by running npm install, npm start.
 
 Your app should also have a **clean** console. We don't want to see you Warnings, Errors, or Logs.
+
+**SMART Goals for  5/10**
+
+-Main Goal: Get all routes fuctioning properly and have UI funcitioning on at least 2 of 3 routes.
+-Stretch: Get all tests passing for berries and pokemon
+
+**SMART Reflection**
+
+-I got my components to render after reviewing lecture notes.
+
+-I was not able to get all my components to render because I was busy with home maintenance throughout the day. 
+
+-I need to improve my ability to break work into smaller sections to complete. This will help me stay on engaged with work.
