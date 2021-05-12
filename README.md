@@ -120,3 +120,15 @@ Your app should also have a **clean** console. We don't want to see you Warnings
 -Main goal: By 4:30 I want to have my home page working, my nav bar with clickable link, and all my components formatted in render
 -stretch: pass all cypress tests 
 
+# Reflection
+
+## What did I accomplish today?
+-Today I was able to creat all my components, have the main layouts show up and pull up the apis on my console. I added some css to my nav bar and working links in a shorter time than usual. I have not added a switch in my code yet but I am thinking on adding it to my components as a child.
+...
+
+## Did I meet the goals I set for myself this morning? If yes, what led to my success? If not, what do I need to work on to accomplish those goals?
+-I met my morning goals, I have not passed all tests since i am still working on adding the api information on the screen. I was able to get most of my work done before lunch and after lunch I was not as focused so I decided to look into my labs that still needed some work to also get some ideas of ways to approach this practice assessment. 
+
+## Based on my work today, something I need more practice with is (be as specific as possible!):
+- Based on my work today I realized I am comfortable with starting my app and noticing my errors before they appear on the screen. I got better at calling apis, and the lifecycle methods. I still need a refresher on the child components of the parent components. I try doing it all in one component which causes some confusion and waste time.
+...
