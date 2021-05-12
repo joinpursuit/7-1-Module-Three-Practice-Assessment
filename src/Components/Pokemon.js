@@ -4,11 +4,8 @@ import axios from 'axios'
 class Pokemon extends Component {
    state = {
       searchPokemon: '',
-      allPokemons: {}
-   }
-
-   componentDidMount() {
-      this.fetchPokemons()
+      allPokemons: {},
+      isError: false
    }
 
    handleChange = (e) => {
@@ -21,15 +18,15 @@ class Pokemon extends Component {
       try {
          const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon/${searchPokemon}`)
          console.log(data.results)
-         this.setState({ allPokemons: data, searchPokemon: '' })
+         this.setState({ allPokemons: data, searchPokemon: '', isError: false })
       } catch (error) {
-         this.setState({ allPokemons: {}, searchPokemon: '' })
+         this.setState({ allPokemons: {}, searchPokemon: '', isError: true })
       }
 
    }
 
    render() {
-      const { searchPokemon, allPokemons } = this.state
+      const { searchPokemon, allPokemons, isError } = this.state
 
       return (
          <div>
@@ -44,11 +41,11 @@ class Pokemon extends Component {
             
             {allPokemons.name ?
             (<div> 
-            <h1>{allPokemons.name}</h1>
+            <h1>Name: {allPokemons.name}</h1>
             <img src={allPokemons.sprites.front_default} alt="" />
             <p>ID {allPokemons.id}</p>
                </div>) 
-               : null} {}
+               : null} {isError ? <h1>Pokemon not found!</h1> : null}
          </div>
       );
    }

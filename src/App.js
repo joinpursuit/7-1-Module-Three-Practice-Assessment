@@ -2,6 +2,7 @@ import "./App.css";
 import NavBar from './Components/NavBar'
 import Berries from './Components/Berries'
 import Pokemon from './Components/Pokemon'
+import Locations from "./Components/Locations";
 import { Switch, Route } from 'react-router-dom'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         </Route>
         <Route path='/berries' component={Berries} />
         <Route path='/pokemon' component={Pokemon} />
+        <Route path='/locations' component={Locations}/>
 			</Switch>
 		</div>
   )

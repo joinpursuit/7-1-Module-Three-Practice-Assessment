@@ -5,7 +5,9 @@ class Berries extends Component {
    state = {
       selectedBerry: '',
       berries: [],
-      berry: {}
+      berry: {},
+      flavors: [],
+      flavor: {}
    }
 
    fetchBerries = async () => {
@@ -24,7 +26,7 @@ class Berries extends Component {
       this.setState({selectedBerry: e.target.value})
       const { data } = await axios.get(`https://pokeapi.co/api/v2/berry/${e.target.value}`)
       console.log(data)
-      this.setState({berry: data})
+      this.setState({berry: data,})
    }
 
 
