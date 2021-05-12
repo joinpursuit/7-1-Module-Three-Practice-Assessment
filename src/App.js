@@ -9,9 +9,9 @@ function App() {
     <div className="app">
       <main>
       <nav>
-        <Link to="/"><img style={{height: "50px"}} src="https://pbs.twimg.com/profile_images/1347869339052072963/oA0oMpur.jpg" alt="pokeball"></img></Link>
-        <Link to="/pokemon">Pokemon</Link>
-        <Link to="/locations">Locations</Link>
+        <Link to="/"><img style={{height: "50px"}} src="https://pbs.twimg.com/profile_images/1347869339052072963/oA0oMpur.jpg" alt="pokeball"></img></Link>{" "}
+        <Link to="/pokemon">Pokemon</Link>{" "}
+        <Link to="/locations">Locations</Link>{" "}
         <Link to="/berries">Berries</Link>
       </nav>
         <Switch>

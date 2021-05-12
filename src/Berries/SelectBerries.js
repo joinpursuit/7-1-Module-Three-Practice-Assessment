@@ -1,31 +1,51 @@
 import React, { Component } from 'react'
-import PokemonAPI from "./PokemonAPI"
+import axios from 'axios'
 
 export class SelectBerries extends Component {
     constructor(){
         super()
 
         this.state = {
-            options: []
+            berries: [],
+            selectedValue: "",
+            currentBerry : {}
         }
     }
 
-    async componentDidMount() {
-        const berries = await PokemonAPI.getBerries()
-        this.setState({options: berries})
+    handleChange = async (e) => {
+        this.setState({ selectedValue : e.target.value})
+
+        const { data } = await axios.get(`https://pokeapi.co/api/v2/berry/${e.target.value}`)
+        this.setState({ currentBerry: data })
+        
     }
 
+    getBerries = async () => {
+        const { data } = await axios.get(`https://pokeapi.co/api/v2/berry/`)
+        this.setState({ berries: data.results})
+    }
+
+    componentDidMount() {
+        this.getBerries()
+    }
+
+
     render() {
-        const { options } = this.state
+        const { berries, selectedValue , currentBerry} = this.state
+        const options = berries.map((berry, i) => {
+            return (
+                <option key={i} value={berry.name}>{berry.name}</option>
+            )
+        })
         return (
             <div>
             <h1>Select a Type</h1>
-                <select onChange={this.handleChange}>
-                {options.map((option, i) => (
-                    <option key={i}>{option}</option>
-                ))}
+                <select onChange={this.handleChange} value={selectedValue}>
                     <option value=""></option>
+                    {options}
                 </select>
+                    <h2>{currentBerry.firmness ? currentBerry.firmness.name : null}</h2>
+                    <h2>{currentBerry.name}</h2>
             </div>
         )
     }
