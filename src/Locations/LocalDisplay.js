@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import LocalApi from "./LocalApi.js"
+import axios from "axios"
 
 export default class LocalDisplay extends Component {
     constructor(){
@@ -10,12 +10,19 @@ export default class LocalDisplay extends Component {
     handleBTN = ()=>{
         this.setState({showList: !this.state.showList})
     }
-    async componentDidMount(){
-        const list = await LocalApi.locationUrl()
-        this.setState({ list })
+    getLocations = async () => {
+        const { data } = await axios.get("https://pokeapi.co/api/v2/location");
+        console.log(data)
+        this.setState({
+          list: data.results.map((loc) => loc.name),
+        });
+    };
+    componentDidMount(){
+        this.getLocations()
     }
     render() {
-        const locationList = this.state.list.map((loc, i) => <li key={i}>{loc.name}</li>)
+        
+        const locationList = this.state.list.map((loc, i) => <li key={i}>{loc}</li>)
         return (
             <div>
                  <h1>"List of Locations"</h1>

@@ -1,21 +1,33 @@
-
-import PokeApi from "./PokeApi.js"
-
 import React, { Component } from 'react'
-
+import axios from "axios"
 export default class Pokemon extends Component {
     constructor(){
         super()
         this.state={
             search: '',
-            pokemon: "default"
+            pokemon: {},
+            isError: false
         }
     }
     handleSubmit = async(e)=>{
-        const pokem = await PokeApi.pokemonURl(e.target.search.value)
-        this.setState({
-            search: '', pokem
-        })
+        e.preventDefault();
+        const {search} = this.state
+        try{
+            const {data} = await axios.get(`https://pokeapi.co/api/v2/pokemon/${search}`)
+            console.log(data)
+            this.setState({
+               search: "", 
+               pokemon: data,
+               isError: false
+            })
+        }catch (e){
+            this.setState({
+                search: '',
+                pokemon: {},
+                isError: true
+            })
+        }
+        
     }
      inputVal = (e)=>{
          this.setState({
@@ -25,15 +37,7 @@ export default class Pokemon extends Component {
 
 
     render() {
-        const description = (resp)=>{
-            if(resp === "default") return <h3>Use the search bar to find a Pokemon</h3>
-            if(resp !== "default") return  <h3>'Pokemon not found!'</h3>
-            return <>
-                       <h2>'Name: {resp.name}'</h2>
-                       <p><img src={resp.sprites.front_default} alt="" /></p>
-                       <p>ID {resp.id}</p>
-                    </>
-        }
+        
         return (
             <div>
                 <h1>"Search for a Pokemon"</h1>
@@ -47,7 +51,14 @@ export default class Pokemon extends Component {
                     <button>Submit</button>
                 </form>
                 
-                {description(this.state.pokemon)}
+                {this.state.pokemon.name ? (
+                    <>
+                    <p>Name: {this.state.pokemon.name}</p>
+                    <p><img src={this.state.pokemon.sprites.front_default} alt="" /></p>
+                    <p>ID {this.state.pokemon.id}</p>
+                 </>
+                ): null}
+                {this.state.isError ? <h3>Pokemon not found!</h3> : null}
             </div>
         )
     }

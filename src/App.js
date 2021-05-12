@@ -8,7 +8,8 @@ function App() {
     <div className="app">
       <main>
         <nav className="header"> 
-          <img  className="logo" src="https://www.pinclipart.com/picdir/middle/521-5215473_logo-pokemon-clipart-picture-transparent-pokemon-logo-pokemon.png" alt="pokemon" />
+          <Link to="/"><img  className="logo" src="https://www.pinclipart.com/picdir/middle/521-5215473_logo-pokemon-clipart-picture-transparent-pokemon-logo-pokemon.png" alt="pokemon" /></Link>
+          
           <Link to="/pokemon" >Pokemon</Link>
           <Link to="/locations">Locations</Link>
           <Link to="/berries">Berries</Link>
