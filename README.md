@@ -113,3 +113,24 @@ Define unique colors (of your choosing) for each page's background.
 Remember to install your packages correctly so that we will be able to run / compile your app by running npm install, npm start.
 
 Your app should also have a **clean** console. We don't want to see you Warnings, Errors, or Logs.
+
+Goals:
+
+#1 Header with location links rendering at least by eod
+->CHECK!
+#2 Location links work by eod.
+->CHECK!  
+
+# Reflection
+
+## What did I accomplish today?
+I accomplished both of my goals
+...
+
+## Did I meet the goals I set for myself this morning? If yes, what led to my success? If not, what do I need to work on to accomplish those goals?
+Yes! Yes!
+...
+
+## Based on my work today, something I need more practice with is (be as specific as possible!):
+The syntax surrounding routing. I had trouble remembering what goes where
+...
