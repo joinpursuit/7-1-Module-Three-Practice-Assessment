@@ -113,3 +113,22 @@ Define unique colors (of your choosing) for each page's background.
 Remember to install your packages correctly so that we will be able to run / compile your app by running npm install, npm start.
 
 Your app should also have a **clean** console. We don't want to see you Warnings, Errors, or Logs.
+
+# Goals for 5/10
+
+- Main goal: By 4:30 pass the remaining 6 tests
+
+# Reflection
+
+## What did I accomplish today?
+
+I attempted to finish the Locations component.
+
+## Did I meet the goals I set for myself this morning? If yes, what led to my success? If not, what do I need to work on to accomplish those goals?
+
+I didn't meet this goal, I need to practice working with APIs in react.
+
+## Based on my work today, something I need more practice with is (be as specific as possible!):
+
+I need more practice with functionality.
+
